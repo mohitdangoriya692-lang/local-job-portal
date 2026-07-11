@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Job Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo" onclick="showPage('home-page')">Job Portal</div>
+            <nav>
+                <a id="nav-home" class="active" onclick="showPage('home-page')">Home</a>
+                <a id="nav-all-jobs" onclick="showAllJobsWithoutFilter()">All Jobs</a>
+                <a id="nav-about" onclick="showPage('about-page')">About Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div id="home-page" class="page active">
+            <button class="search-btn-top">
+                नौकरी ढूँढे <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="form-card">
+                <div class="form-group">
+                    <label>जिला (District)</label>
+                    <select id="district-select">
+                        <option value="Show All">Show All Districts</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label>शिक्षा स्तर (Education Level)</label>
+                    <select id="education-select">
+                        <option value="Show All">Show All</option>
+                        <option value="8th Pass">8th Pass</option>
+                        <option value="High School">High School</option>
+                        <option value="Intermediate or Higher">Intermediate or Higher</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelor’s">Bachelor's</option>
+                    </select>
+                </div>
+
+                <button class="submit-btn" onclick="filterAndShowJobs()">Show me Jobs</button>
+            </div>
+
+            <div class="banner-img-box">
+                <img src="https://www.vize.com/wwwengine/img/about_members.jpg" alt="Team Banner">
+            </div>
+        </div>
+
+
+        <div id="results-page" class="page">
+            <div class="results-header">
+                Click on the icons to call or WhatsApp these users:
+            </div>
+            
+            <div id="job-list-container" class="job-list">
+                </div>
+        </div>
+
+
+        <div id="about-page" class="page">
+            <div class="about-card">
+                <h2>About Me</h2>
+                <p>Hello! Mera naam ek passionate web developer hai jo responsive aur high-performance web applications banana pasand karta hai.</p>
+                
+                <h3>My CodeYogi Experience</h3>
+                <p>CodeYogi platform ke sath mera learning experience behad shandar rha hai. Yahan maine modern web technologies jaise HTML5, Advanced CSS3, Responsive Web Design aur core JavaScript seekha hai.</p>
+                <p>Mene seekha hai ki kaise UI elements ko pixel-perfect design kiya jata hai aur practical real-world applications ko optimize tarike se deploy kiya jata hai.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

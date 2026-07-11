@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header & Navbar Styling */
+header {
+    background-color: #3a3b3c;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a {
+    color: #e4e6eb;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover, nav a.active {
+    color: #e53935;
+}
+
+/* Main Layout Container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Page 1 UI Element Controls */
+.search-btn-top {
+    background-color: #e53935;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+.form-group select:focus {
+    border-color: #e53935;
+}
+
+.submit-btn {
+    background-color: #ef5350;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.submit-btn:hover {
+    background-color: #e53935;
+}
+
+.banner-img-box {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.banner-img-box img {
+    width: 100%;
+    display: block;
+    filter: grayscale(80%);
+}
+
+/* Page 2 Job Cards Layout (Mockup design style matches) */
+.results-header {
+    background-color: #4a4b4c;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-card {
+    background-color: #c4c4c4; /* Mockup grey background theme */
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #b0b0b0;
+}
+
+.job-info h3 {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.job-info p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.job-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.action-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.action-icon:hover {
+    transform: scale(1.1);
+}
+
+.icon-wa { background-color: #25D366; }
+.icon-call { background-color: #007bff; }
+
+.no-jobs {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    color: #666;
+}
+
+/* Page 3 About Me Design */
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+    color: #e53935;
+    border-bottom: 2px solid #f4f6f9;
+    padding-bottom: 10px;
+}
+
+.about-card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #3a3b3c;
+}
+
+.about-card p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Support (Mobile View Optimization) */
+@media (max-width: 600px) {
+    .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .job-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    header {
+        padding: 15px 10px;
+    }
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}
