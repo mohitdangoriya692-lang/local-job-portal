@@ -92,6 +92,11 @@ function displayJobs(jobsArray) {
 function filterAndShowJobs() {
     const selectedDistrict = document.getElementById('district-select').value;
     const selectedEdu = document.getElementById('education-select').value;
+    // SIRF YEH 4 LINES NAYI ADD KARI HAIN:
+    if (selectedDistrict === 'Show All' && selectedEdu === 'Show All') {
+        alert("Kripya pehle koi District ya Education select karein!");
+        return; 
+    }
 
     const filtered = jobsData.filter(job => {
         const distMatch = (selectedDistrict === 'Show All' || job.district === selectedDistrict);
