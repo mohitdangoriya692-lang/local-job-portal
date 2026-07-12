@@ -53,6 +53,14 @@ function showPage(pageId) {
 
     if(pageId === 'home-page') {
         document.getElementById('nav-home').classList.add('active');
+        
+
+// --- YAHAN YE ADD KAREIN (Line 54 se 57) ---
+    if (pageId === 'home-page') {
+        document.getElementById('district-select').value = 'Show All';
+        document.getElementById('education-select').value = 'Show All';
+    }
+// ------------------------------------------
     } else if(pageId === 'results-page') {
         document.getElementById('nav-all-jobs').classList.add('active');
     } else if(pageId === 'about-page') {
@@ -94,7 +102,7 @@ function filterAndShowJobs() {
     const selectedEdu = document.getElementById('education-select').value;
     // SIRF YEH 4 LINES NAYI ADD KARI HAIN:
     if (selectedDistrict === 'Show All' && selectedEdu === 'Show All') {
-        alert("Kripya pehle koi District ya Education select karein!");
+        alert("Don ko dhundna mushkil hi nahi, namumkin hai.... Are o Samba! Dekh, isne na toh District chuna, na Education... bina kuch select kiye seedha 'Search' dabane chala! Arey o bhai, thoda zor daal aur kuch toh select kar, warna result ki jagah sirf 'Sannata' milega 💪💪💪🤔🤔");
         return; 
     }
 
