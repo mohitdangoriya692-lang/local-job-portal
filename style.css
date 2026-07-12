@@ -12,8 +12,11 @@ body {
 
 /* Header & Navbar Styling */
 header {
-    background-color: #3a3b3c;
+    background-color: #2a3e59;
+    border: 2px solid black;
+    border-radius: 10px ;
     padding: 15px 20px;
+    font-size: 15px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -46,7 +49,7 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    color: #e53935;
+    color: green;
 }
 
 /* Main Layout Container */
@@ -66,7 +69,7 @@ nav a:hover, nav a.active {
 
 /* Page 1 UI Element Controls */
 .search-btn-top {
-    background-color: #e53935;
+    background-color: #40f01d;
     color: white;
     width: 100%;
     padding: 14px;
@@ -98,7 +101,7 @@ nav a:hover, nav a.active {
     display: block;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #444;
+    color: #14A1BB;
 }
 
 .form-group select {
@@ -113,11 +116,11 @@ nav a:hover, nav a.active {
 }
 
 .form-group select:focus {
-    border-color: #e53935;
+    border-color: #80E535F7;
 }
 
 .submit-btn {
-    background-color: #ef5350;
+    background-color: #B32727F0;
     color: white;
     width: 100%;
     padding: 14px;
@@ -148,7 +151,7 @@ nav a:hover, nav a.active {
 
 /* Page 2 Job Cards Layout (Mockup design style matches) */
 .results-header {
-    background-color: #4a4b4c;
+    background-color: #89DB20;
     color: white;
     padding: 15px;
     border-radius: 6px;
@@ -174,13 +177,13 @@ nav a:hover, nav a.active {
 
 .job-info h3 {
     font-size: 18px;
-    color: #111;
+    color: black;
     margin-bottom: 6px;
 }
 
 .job-info p {
     font-size: 14px;
-    color: #333;
+    color: black;
     margin-bottom: 4px;
 }
 
