@@ -17,17 +17,17 @@ const districts = [
 
 // Aapka bheja hua complete data row-wise map kiya gaya hai
 const jobsData = [
-    { company: "LocalMart", role: "Delivery Associate", district: "Saharanpur", address: "22, Circular Road, Saharanpur", phone: "9876543210", wa: "9876543210", openings: 10, edu: "High School" },
-    { company: "Saharanpur Electronics", role: "Sales Executive", district: "Saharanpur", address: "Shop No. 12, Main Market, Sarai Road, Saharanpur", phone: "9876543211", wa: "9876543211", openings: 3, edu: "High School" },
-    { company: "Mittal & Sons Finance", role: "Accountant", district: "Saharanpur", address: "15/A, Gandhi Chowk, Saharanpur", phone: "9876543212", wa: "9876543212", openings: 1, edu: "Bachelor’s" },
-    { company: "ABC Solutions", role: "Data Entry Operator", district: "Saharanpur", address: "Plot No. 101, Industrial Area, Saharanpur", phone: "9876543213", wa: "9876543213", openings: 2, edu: "8th Pass" },
-    { company: "Sharma Enterprises", role: "Office Assistant", district: "Saharanpur", address: "56, Nehru Colony, Saharanpur", phone: "9876543214", wa: "9876543214", openings: 2, edu: "Intermediate or Higher" },
-    { company: "Gupta Agro Products", role: "Field Sales Manager", district: "Saharanpur", address: "19, Agriculture Market, Nakur, Saharanpur", phone: "9876543215", wa: "9876543215", openings: 8, edu: "Bachelor’s" },
-    { company: "Creative Studio", role: "Graphic Designer", district: "Saharanpur", address: "2nd Floor, City Center Mall, Saharanpur", phone: "9876543216", wa: "9876543216", openings: 2, edu: "Diploma" },
-    { company: "City Hospital", role: "Receptionist", district: "Saharanpur", address: "21/B, Civil Lines, Saharanpur", phone: "9876543217", wa: "9876543217", openings: 2, edu: "High School" },
-    { company: "CallHub Services", role: "Customer Support Rep", district: "Saharanpur", address: "45, IT Park, Saharanpur", phone: "9876543218", wa: "9876543218", openings: 6, edu: "Intermediate or Higher" },
-    { company: "Shishu Mandir School", role: "Teacher", district: "Saharanpur", address: "Plot No. 5, Shastri Nagar, Saharanpur", phone: "9876543219", wa: "9876543219", openings: 3, edu: "Bachelor’s" },
-    { company: "Jindal Pvt. Ltd.", role: "Marketing Executive", district: "Saharanpur", address: "Industrial Estate, Rampur Road, Saharanpur", phone: "9876543220", wa: "9876543220", openings: 3, edu: "Bachelor’s" }
+    { company: "LocalMart", role: "Delivery Associate", district: "Agra", address: "22, Circular Road, Saharanpur", phone: "9876543210", wa: "9876543210", openings: 10, edu: "High School" },
+    { company: "Saharanpur Electronics", role: "Sales Executive", district: "Aligarh", address: "Shop No. 12, Main Market, Sarai Road, Saharanpur", phone: "9876543211", wa: "9876543211", openings: 3, edu: "High School" },
+    { company: "Mittal & Sons Finance", role: "Accountant", district: "Ambedkar Nagar", address: "15/A, Gandhi Chowk, Saharanpur", phone: "9876543212", wa: "9876543212", openings: 1, edu: "Bachelor’s" },
+    { company: "ABC Solutions", role: "Data Entry Operator", district: "Amethi", address: "Plot No. 101, Industrial Area, Saharanpur", phone: "9876543213", wa: "9876543213", openings: 2, edu: "8th Pass" },
+    { company: "Sharma Enterprises", role: "Office Assistant", district: "Amroha (Jyotiba Phule Nagar)", address: "56, Nehru Colony, Saharanpur", phone: "9876543214", wa: "9876543214", openings: 2, edu: "Intermediate or Higher" },
+    { company: "Gupta Agro Products", role: "Field Sales Manager", district: "Auraiya", address: "19, Agriculture Market, Nakur, Saharanpur", phone: "9876543215", wa: "9876543215", openings: 8, edu: "Bachelor’s" },
+    { company: "Creative Studio", role: "Graphic Designer", district: "Azamgarh", address: "2nd Floor, City Center Mall, Saharanpur", phone: "9876543216", wa: "9876543216", openings: 2, edu: "Diploma" },
+    { company: "City Hospital", role: "Receptionist", district: "Baghpat", address: "21/B, Civil Lines, Saharanpur", phone: "9876543217", wa: "9876543217", openings: 2, edu: "High School" },
+    { company: "CallHub Services", role: "Customer Support Rep", district: "Bahraich", address: "45, IT Park, Saharanpur", phone: "9876543218", wa: "9876543218", openings: 6, edu: "Intermediate or Higher" },
+    { company: "Shishu Mandir School", role: "Teacher", district: "Ballia", address: "Plot No. 5, Shastri Nagar, Saharanpur", phone: "9876543219", wa: "9876543219", openings: 3, edu: "Bachelor’s" },
+    { company: "Jindal Pvt. Ltd.", role: "Marketing Executive", district: "Balrampur", address: "Industrial Estate, Rampur Road, Saharanpur", phone: "9876543220", wa: "9876543220", openings: 3, edu: "Bachelor’s" }
 ];
 
 // App start hote hi automatic districts load karne ke liye
@@ -102,7 +102,7 @@ function filterAndShowJobs() {
     const selectedEdu = document.getElementById('education-select').value;
     // SIRF YEH 4 LINES NAYI ADD KARI HAIN:
     if (selectedDistrict === 'Show All' && selectedEdu === 'Show All') {
-        alert("Don ko dhundna mushkil hi nahi, namumkin hai.... Are o Samba! Dekh, isne na toh District chuna, na Education... bina kuch select kiye seedha 'Search' dabane chala! Arey o bhai, thoda zor daal aur kuch toh select kar, warna result ki jagah sirf 'Sannata' milega 💪💪💪🤔🤔");
+        alert("Kripya aage badhne ke liye apni District aur Job-type select karein. Dhanyavad!");
         return; 
     }
 
