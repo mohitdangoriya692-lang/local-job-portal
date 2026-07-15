@@ -4,11 +4,18 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-body {
+html, body {
     background-color: #f4f6f9;
     color: #333;
+    width: 100% !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
 }
+
 
 /* Header & Navbar Styling */
 header {
@@ -24,12 +31,13 @@ header {
 }
 
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100% !important;
+    width: 100% !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .logo {
     color: #fff;
@@ -54,18 +62,31 @@ nav a:hover, nav a.active {
 
 /* Main Layout Container */
 .container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 15px;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    min-height: calc(100vh - 60px) !important; /* Header ka size minus karke screen full karega */
+    flex-grow: 1 !important;
+    margin: 0 !important;
+    padding: 20px 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
 }
 
 .page {
     display: none;
+    width: 100% !important;
+    flex-direction: column !important;
 }
 
 .page.active {
-    display: block;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+    flex-grow: 1 !important;
 }
+
 
 /* Page 1 UI Element Controls */
 .search-btn-top {
@@ -166,13 +187,15 @@ nav a:hover, nav a.active {
 }
 
 .job-card {
-    background-color: #c4c4c4; /* Mockup grey background theme */
+    background-color: #c4c4c4; 
     border-radius: 8px;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important; /* 2XL standard screen par bhi column format force karega */
+    align-items: flex-start !important;
+    gap: 15px;
     border: 1px solid #b0b0b0;
+    width: 100% !important;
 }
 
 .job-info h3 {
@@ -187,10 +210,14 @@ nav a:hover, nav a.active {
     margin-bottom: 4px;
 }
 
+
 .job-actions {
-    display: flex;
+    display: flex !important;
     gap: 12px;
+    width: 100% !important;
+    justify-content: flex-end !important; /* Buttons right side set rahenge */
 }
+
 
 .action-icon {
     width: 40px;
@@ -249,7 +276,7 @@ nav a:hover, nav a.active {
 }
 
 /* Responsive Support (Mobile View Optimization) */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .job-card {
         flex-direction: column;
         align-items: flex-start;
@@ -265,5 +292,14 @@ nav a:hover, nav a.active {
     nav a {
         margin-left: 10px;
         font-size: 13px;
+    }
+}
+/* Sabse niche paste kar dena, isse 2XL screen par khud ba khud sab zoom ho jayega */
+@media (min-width: 1024px) {
+    body {
+        zoom: 2.2 !important; /* Pure page ko 2.2 guna bada kar dega */
+        -moz-transform: scale(2.2); /* Firefox support */
+        -moz-transform-origin: top left;
+        width: 45vw !important; /* Aspect ratio control */
     }
 }
