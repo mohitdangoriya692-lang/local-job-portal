@@ -90,7 +90,7 @@ nav a:hover, nav a.active {
 /* Top Button Scaling based on Viewport */
 .search-btn-top {
     background-color: #00FF01;
-    color: white;
+    color: #111;
     width: 100% !important;
     padding: 2.5vw !important;
     border: none;
@@ -167,8 +167,8 @@ nav a:hover, nav a.active {
 
 /* Results Section Scaling */
 .results-header {
-    background-color: #e8f5e9;
-    color: #2e7d32;
+    background-color: #519DA6;
+    color: #00FF01;
     padding: 2.5vw !important;
     border-radius: 1vw;
     text-align: center;
