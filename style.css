@@ -22,7 +22,9 @@ html, body {
 
 /* --- HEADER AND NAVIGATION TEXT FULL SCALING --- */
 header {
-    background: #2e7d32;
+    background: #42525A;
+
+    border-radius: 5px;
     padding: 2.5vw 4vw !important;
     position: sticky;
     top: 0;
@@ -57,7 +59,7 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    color: #ffeb3b;
+    color: #21C145;
 }
 
 /* --- CONTAINER (POORI HEIGHT LEGA AUR KHANCHO KO NEECHE KHEENCHEGA) --- */
@@ -87,7 +89,7 @@ nav a:hover, nav a.active {
 
 /* Top Button Scaling based on Viewport */
 .search-btn-top {
-    background-color: #e53935;
+    background-color: #00FF01;
     color: white;
     width: 100% !important;
     padding: 2.5vw !important;
@@ -137,7 +139,7 @@ nav a:hover, nav a.active {
 
 /* Submit Button Scaling */
 .submit-btn {
-    background-color: #ffb300;
+    background-color: #00FF01;
     color: #111;
     width: 100% !important;
     padding: 2.2vw !important;
